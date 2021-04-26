@@ -2,7 +2,7 @@ class Book {
 
     static all = []
 
-    constructor({id, title, image_url, category,comment_id}){
+    constructor({id, title, image_url, category, comment_id}){
 
         this.id = id
         this.title = title
@@ -26,14 +26,14 @@ class Book {
           <img src=${this.image_url} class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${this.title}</h5>
-            <p class="card-text">${this.category}</p>
-            <p class="card-text">${this.comment_id}</p>
+             <p class="card-text">${this.category}</p>
+             <p class="card-text">${this.commentId}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
               </div>
-              <small class="text-muted">Comment: ${this.comment_id}</small>
+              <small class="text-muted">Comment: ${this.commentId}</small>
             </div>
           </div>
         </div>

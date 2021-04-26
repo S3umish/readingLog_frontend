@@ -39,20 +39,23 @@
                             required>
                           </div>                       
                           <div class="form-group">
-                          <p>Choose A category:</p>
-                          <select id ="categories" name="categories">
+                            <label for="category">Category</label>
+                            <input type="text" id="input-category" class="form-control"
+                            placeholder="Enter Book's Category">
+                          <!-- <p>Choose A category:</p>
+                          <select id ="input-category" name="category">
                             <option value="1">Fiction</option>
-                            <option value="2">Non-Fiction</option> 
+                            <option value="2">Non-Fiction</option>  -->
 
-                          </select>  
+                          <!-- </select>   -->
                           <br><br>  
 
                           <h2>Add Comments:</h2>
                           <div id="comment-container"></div>
-                          <!-- <div class="form-group">
-                            <input type="text" name="name" id="comment-name"class="form-control"><br><br>
-                          </div> -->
-                          
+                          <div class="form-group">
+                            <input type="text" name="name" id="input-comment"class="form-control"><br><br>
+                          </div>
+                          <h2> Filter By Comments:</h2>
                           <label for="comment-dropdown">Comment:</label>
                             <select name="comment_id" id="comment-dropdown">
                             </select><br><br>
