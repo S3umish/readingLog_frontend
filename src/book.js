@@ -42,11 +42,7 @@ class Book {
      
     }
 
-    // attachToDom(){
-
-    //  bookList.appendChild(this.renderBook())
-    // }
-
+    
 
 
 
