@@ -76,86 +76,25 @@ class Book {
   }
 
   
-  
-  static sortBooks(){
-
-      let books = Book.all
-      let b = document.getElementById("demo").innerHTML   
-         
-         myFunction1() 
-         books.sort();
-  
-         myFunction2() 
-         books.sort(function(a, b){return a - b});
-         document.getElementById("demo").innerHTML = books;
-  }
 
 
-
-
-  // static sortBooksByTitle = () => {
-  //     debugger
-
-  //     return Book.all.sort((a,b) => {
-
-  //       let titleA = a.book.title.toUppercase()
-  //       let titleB = b.book.title.toUppercase()
-  //       if (titleA < titleB) {
-  //         return -1
-  //       }else{
-  //         return 1
-  //       }
-  //     })
-
-  // }
   totalButton(){
       let tButton = document.createElement("button");
       tButton.displayTotal = `${this.displayTotal}`
       this.list.appendChild(tbutton);
-       tbutton.addEventListener("mouseover",bookTotal)
-
+    //   tbutton.addEventListener("mouseover",bookTotal)
+      
   }
 
   static displayTotal() {
       const bookTotal = Book.all.length
       console.log(bookTotal)
       alert(`Total Number of Books are ${bookTotal}`)
-     
+      
   }
 
 
-  // static findById(id) {
-  //     return this.all.find(book => book.id === this.id)
-  // }
-
-  // find as in the lesson
-
-  // static find(array, criteriaFn){
-  //     let current = array
-  //     let next = []
-
-  //     while (current || current === 0){
-
-  //         if (criteriaFn(current)) {
-  //             return current
-  //         }
-
-  //         if (Array. isArray(current)) {
-  //             for (let i = 0; i< current.length; i++) {
-  //                 next .push(current[i])
-  //             }
-  //         }
-
-  //         current = next.shift()
-
-  //         }
-  //         return null
-  //     }
-
-      //find(numberCollections, number => number > 5) 
-      //number => (typeof number === 'number' && number > 5) 
-
-
+ 
 
 
 }

@@ -17,7 +17,6 @@ class Category{
     }
 
     books(){
-
         return Book.all.filter((book) => book.category_id === parseInt(this.id))
     }
 
@@ -54,7 +53,7 @@ class Category{
             
         }) 
         
-           Book.filterByCategory(chooseCategory)
+        Book.filterByCategory(chooseCategory)
 
     }
 
